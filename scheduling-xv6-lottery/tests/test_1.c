@@ -11,7 +11,7 @@ void fork_children(int id) {
     exit();
   } else if (pid == 0) {
     // child goes here.
-    settickets(5);
+    settickets(id);
     int i, j, a = 1, b = 2, tmp;
     for (i = 0; i < 10; ++i) {
       for (j = 0; j < 100; ++j) {
